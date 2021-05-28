@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <!--Bootstrap 5 CSS  Link-->
+    <link rel="stylesheet" href="../modal/css/bootstrap.css" />
+    <link rel="stylesheet" href="../modal/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../modal/css/style.css" />
+    <!--Font Awesome Icon-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+        integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <script src="https://use.fontawesome.com/65c2d5d376.js"></script>
+</head>
+
+<body class="container">
+    <!--Modal For Sucess GPA Card-->
+    <!-- Button trigger modal for GPA Sucess -->
+    <button type="button" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#sucessgpa">
+        GPA SUCCESS
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="sucessgpa" tabindex="-1" aria-labelledby="sucessggpa" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-success text-white">
+                <!--
+                    modal-header css changed in bootstrap.min.css -> border-bottom : border-bottom: 1px solid #dee2e6; !removed
+                -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container">
+                    <!--Text Shadow in style.css with class -> gpa-success-text -->
+                    <h3 class="text-uppercase text-center gpa-text">
+                        Congratulation !
+                    </h3>
+                    <h4 class="text-uppercase text-center fw-normal mt-4">A09015</h4>
+                    <h2 class="text-uppercase text-center fw-bold mt-4">3.85</h2>
+                    <center>
+                        <img src="../modal/img/web/gpa-success.svg" alt="GPA_success" class="gpa-img text-center" />
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <!--Modal For Warning GPA Card-->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#warninggpa">
+        GPA Warning
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="warninggpa" tabindex="-1" aria-labelledby="warninggpaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-warning text-white">
+                <!--
+                    modal-header css changed in bootstrap.min.css -> border-bottom : border-bottom: 1px solid #dee2e6; !removed
+                -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container">
+                    <!--Text Shadow in style.css with class -> gpa-success-text -->
+                    <h3 class="text-uppercase text-center gpa-text">
+                        Congratulation !
+                    </h3>
+                    <h4 class="text-uppercase text-center fw-normal mt-4">A0055</h4>
+                    <h2 class="text-uppercase text-center fw-bold mt-4">2.25</h2>
+                    <center>
+                        <img src="../modal/img/web/gpa-warning.svg" alt="GPA_success" class="gpa-img text-center" />
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <!--Modal For Primary GPA Card-->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#primaryggpa">
+        GPA Primary
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="primaryggpa" tabindex="-1" aria-labelledby="primaryggpaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-primary text-white">
+                <!--
+                modal-header css changed in bootstrap.min.css -> border-bottom : border-bottom: 1px solid #dee2e6; !removed
+            -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container">
+                    <!--Text Shadow in style.css with class -> gpa-success-text -->
+                    <h3 class="text-uppercase text-center gpa-text">
+                        Congratulation !
+                    </h3>
+                    <h4 class="text-uppercase text-center fw-normal mt-4">A0045</h4>
+                    <h2 class="text-uppercase text-center fw-bold mt-4">1.25</h2>
+                    <center>
+                        <img src="../modal/img/web/gpa-primary.svg" alt="GPA_success" class="gpa-img text-center" />
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <!--Modal For Withheld GPA Card-->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#withheldggpa">
+        GPA Withheld
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="withheldggpa" tabindex="-1" aria-labelledby="withheldggpaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-danger text-white">
+            <!--
+            modal-header css changed in bootstrap.min.css and bootstrao.css -> border-bottom : border-bottom: 1px solid #dee2e6; !removed
+            -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container">
+                    <!--Text Shadow in style.css with class -> gpa-success-text -->
+                    <h3 class="text-uppercase text-center gpa-text">Withheld !</h3>
+                    <center>
+                        <img src="../modal/img/web/gpa-danger.svg" alt="GPA_success" class="withheld-img text-center" />
+                    </center>
+                    <h5 class="text-uppercase text-center fw-normal mt-4 text-center">
+                        Contact with in 15 Days to your admininstrator with the help of
+                        contact below:
+                    </h5>
+                </div>
+                <div class="text-end container mb-3">
+                   <div><i class="fa fa-phone-alt"></i> <span class="text-white fs-5">9866774455</span></div>
+                   <div class="mt=5"><i class="fa fa-envelope"></i> <span class="text-white fs-5">email@gmail.com</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bootstrap JS 5 Link-->
+    <script src="../modal/js/bootstrap.js"></script>
+    <script src="../modal/js/bootstrap.min.js"></script>
+</body>
+
+</html>
